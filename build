@@ -1,0 +1,11 @@
+#
+# // Copyright (C) 2022 Salman Wahib (sxlmnwb)
+#
+
+# Clean before build
+make clean && make mrproper
+
+# Building
+make KCONFIG_CONFIG=Microsoft/xBoreUp_x86_64 -j$(nproc --all)
+
+#End
