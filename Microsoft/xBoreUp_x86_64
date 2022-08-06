@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 5.15.57.1 Kernel Configuration
+# Linux/x86 5.15.59 Kernel Configuration
 #
 CONFIG_CC_VERSION_TEXT="gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0"
 CONFIG_CC_IS_GCC=y
@@ -1903,7 +1903,7 @@ CONFIG_MII=y
 CONFIG_NET_CORE=y
 CONFIG_BONDING=y
 CONFIG_DUMMY=y
-# CONFIG_WIREGUARD=y is not set
+# CONFIG_WIREGUARD is not set
 # CONFIG_WIREGUARD_DEBUG is not set
 # CONFIG_EQUALIZER is not set
 # CONFIG_NET_FC is not set
