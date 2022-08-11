@@ -7,9 +7,11 @@ make clean && make mrproper
 
 # Building [LLVM]
 make KCONFIG_CONFIG=Microsoft/xBoreUp_x86_64 \
-     -j$(nproc --all) CC=clang \
-                      LD=ld.lld \
-                      AR=llvm-ar \
-                      NM=llvm-nm \
-                      OBJCOPY=llvm-objcopy                    
-#End
+     CC=clang \
+     LD=ld.lld \
+     AR=llvm-ar \
+     NM=llvm-nm \
+     OBJCOPY=llvm-objcopy \
+     -j$(nproc --all)
+
+# End
