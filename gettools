@@ -1,0 +1,8 @@
+#
+# // Copyright (C) 2022 Salman Wahib (sxlmnwb)
+#
+
+# Download clang
+git clone https://github.com/sxlmnwb/sxlzptprjkt-clang --depth=1 sxlzptprjkt-clang
+
+# End

@@ -5,13 +5,22 @@
 # Clean before build
 make clean && make mrproper
 
+# Main environtment
+KERNEL_DIR=$PWD
+PATH=:"${KERNEL_DIR}/sxlzptprjkt-clang/bin:${PATH}"
+
+# Export
+export KCONFIG_CONFIG=Microsoft/xBoreUp_x86_64
+export KBUILD_BUILD_USER=sxlmnwb
+export KBUILD_BUILD_HOST=sxlzptprjkt
+export ARCH=x86
+
 # Building [LLVM]
-make KCONFIG_CONFIG=Microsoft/xBoreUp_x86_64 \
+make -j$(nproc --all) \
      CC=clang \
      LD=ld.lld \
      AR=llvm-ar \
      NM=llvm-nm \
-     OBJCOPY=llvm-objcopy \
-     -j$(nproc --all)
+     OBJCOPY=llvm-objcopy
 
 # End
